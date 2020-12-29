@@ -22,3 +22,20 @@ function  bisection(f, start, fin, n)
 	return middle
 end
 
+function run_bisection()
+	
+	print("your function : ")
+	f = str2func(readline())
+	print("start : ")
+	s = getFloat()
+	print("end   :")
+	e = getFloat()
+	print("times ? ")
+	t = getInt()
+	r = bisection(f,s,e,t)
+	print("root :")
+	println(r)
+	print("function value :")
+	println(f(r))
+end
+

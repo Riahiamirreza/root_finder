@@ -20,7 +20,7 @@ function newton(f, start, n=10)
 			return xn
 		end
 		
-		xn = xn - (f(xn) / derivative(f,xn))
+		xn = xn - (f(xn) / derivative(f,xn,0.0000001))
 	end
 	return xn
 end
