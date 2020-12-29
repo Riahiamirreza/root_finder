@@ -10,4 +10,23 @@ include("methods/newton.jl")
 
 
 
-run_newton()
+println("Choose method:")
+println("1)newton")
+println("2)bisection")
+println("3)false position")
+
+a = getInt()
+
+if a == 1 
+	run_newton()
+elseif a == 2
+	run_bisection()
+elseif a == 3
+	run_false_position()
+end
+	
+
+	
+
+	
+
